@@ -1,0 +1,33 @@
+env:
+  - name: qa
+    keypath_instances: ~/.ssh/
+    keypath_bastion: ~/.ssh/
+    username_bastion: ubuntu
+    host_bastion: bastion.qa.company.com
+    username_instance: ubuntu
+    tagFilter: tag:App
+    tagValuesPrefix: company-
+    tagValuesSuffix:
+    awsRegion: eu-central-1
+  
+  - name: sandbox
+    keypath_instances: ~/.ssh/
+    keypath_bastion: ~/.ssh/
+    username_bastion: ubuntu
+    host_bastion: bastion.sandbox.company.com
+    username_instance:  ubuntu
+    tagFilter: tag:App
+    tagValuesPrefix: company-
+    tagValuesSuffix:
+    awsRegion: eu-central-1
+
+  - name: prod
+    keypath_instances: ~/.ssh/
+    keypath_bastion: ~/.ssh/
+    username_bastion: ec2-user
+    host_bastion: bastion.sandbox.company.com
+    username_instance:  ubuntu
+    tagFilter: tag:App
+    tagValuesPrefix: company-
+    tagValuesSuffix:
+    awsRegion: eu-central-1

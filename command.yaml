@@ -1,0 +1,9 @@
+commands:
+  - uptime
+  - dmesg | tail
+  - vmstat 1 5
+  - pidstat 1 5
+  - iostat -xz 1 5
+  - free -m
+  - sar -n DEV 1 5
+  - sar -n TCP,ETCP 1 5
